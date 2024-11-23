@@ -34,6 +34,7 @@
             this.textboxUser = new System.Windows.Forms.TextBox();
             this.labelUsername = new System.Windows.Forms.Label();
             this.linkLabelForgotPassword = new System.Windows.Forms.LinkLabel();
+            this.buttonExitApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loginButton
@@ -103,11 +104,22 @@
             this.linkLabelForgotPassword.Text = "Forgot Password";
             this.linkLabelForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelForgotPassword_LinkClicked);
             // 
+            // buttonExitApp
+            // 
+            this.buttonExitApp.Location = new System.Drawing.Point(713, 415);
+            this.buttonExitApp.Name = "buttonExitApp";
+            this.buttonExitApp.Size = new System.Drawing.Size(75, 23);
+            this.buttonExitApp.TabIndex = 10;
+            this.buttonExitApp.Text = "Close App";
+            this.buttonExitApp.UseVisualStyleBackColor = true;
+            this.buttonExitApp.Click += new System.EventHandler(this.buttonExitApp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonExitApp);
             this.Controls.Add(this.linkLabelForgotPassword);
             this.Controls.Add(this.textboxPassword);
             this.Controls.Add(this.labelPassword);
@@ -130,6 +142,7 @@
         private System.Windows.Forms.TextBox textboxUser;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.LinkLabel linkLabelForgotPassword;
+        private System.Windows.Forms.Button buttonExitApp;
     }
 }
 
