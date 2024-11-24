@@ -41,5 +41,23 @@ namespace EEE3111___EA_Visual_C__project__individual_
             this.Close();
             form1.Show();
         }
+
+        private void buttonExitApp_Click(object sender, EventArgs e)
+        {
+            // Show confirmation message
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            // If user confirms, exit the application
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Close all forms and exit the application
+            }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.Products' table. You can move, or remove it, as needed.
+            this.productsTableAdapter.Fill(this.database1DataSet.Products);
+
+        }
     }
 }
