@@ -19,12 +19,6 @@ namespace EEE3111___EA_Visual_C__project__individual_
             InitializeComponent();
             form1 = form;
         }
-
-        private void tableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void linkLabelLogOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Show confirmation message
